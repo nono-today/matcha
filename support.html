@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Matcha — Support</title>
 <meta name="description" content="Support and contact for Matcha, a pocket lo-fi instrument for iPhone and iPad.">
-<meta name="theme-color" content="#0B0A10">
+<meta name="theme-color" content="#0A0910">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-1024.png">
 <meta property="og:title" content="Matcha — Support">
@@ -19,11 +19,38 @@
 </head>
 <body>
 
+<!-- ink-wash canvas -->
+<svg class="ink-bg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <filter id="ink" x="-40%" y="-40%" width="180%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.009 0.013" numOctaves="3" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="150" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="brush" x="-20%" y="-60%" width="140%" height="220%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.04" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="b-coral"><stop offset="0%" stop-color="#EE5A7C" stop-opacity=".5"/><stop offset="72%" stop-color="#EE5A7C" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b-teal"><stop offset="0%" stop-color="#4FC2AE" stop-opacity=".38"/><stop offset="72%" stop-color="#4FC2AE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b-yellow"><stop offset="0%" stop-color="#E9BE2E" stop-opacity=".24"/><stop offset="72%" stop-color="#E9BE2E" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b-indigo"><stop offset="0%" stop-color="#3A2E6E" stop-opacity=".5"/><stop offset="72%" stop-color="#3A2E6E" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g filter="url(#ink)">
+    <ellipse cx="230" cy="140" rx="360" ry="300" fill="url(#b-coral)"/>
+    <ellipse cx="1020" cy="220" rx="380" ry="330" fill="url(#b-teal)"/>
+    <ellipse cx="680" cy="880" rx="440" ry="320" fill="url(#b-yellow)"/>
+    <ellipse cx="150" cy="760" rx="320" ry="300" fill="url(#b-indigo)"/>
+  </g>
+</svg>
+<div class="bloom b1"></div><div class="bloom b2"></div><div class="bloom b3"></div>
+<div class="grain"></div>
+
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="index.html">Matcha<span class="dot">.</span></a>
     <nav>
-      <a class="hide-sm" href="index.html#features">Features</a>
+      <a class="hide-sm" href="index.html#features">The instrument</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
     </nav>
@@ -32,8 +59,8 @@
 
 <div class="page-head">
   <div class="wrap">
-    <a class="back" href="index.html">← Back to Matcha</a>
-    <span class="eyebrow">Support</span>
+    <a class="back" href="index.html"><svg viewBox="0 0 30 8" aria-hidden="true"><path d="M27 4 H4 M9 1 L4 4 L9 7"/></svg> Back to Matcha</a>
+    <span class="eyebrow">Support <span class="jp">· 手引き</span></span>
     <h1 class="title" style="margin-top:14px">How can we <em>help</em>?</h1>
   </div>
 </div>
@@ -41,14 +68,14 @@
 <section style="padding-top:36px">
   <div class="wrap prose">
 
-    <p>Matcha is a small, calm instrument — most things happen with a single tap. If something isn't working or you have an idea, the fastest way to reach us is email. We read every message.</p>
+    <p>Matcha is a small, quiet instrument — most things happen with a single tap. If something isn't working, or you just want to say something, email is the fastest way to reach us. We read every message.</p>
 
     <div style="margin:28px 0 8px">
       <a class="btn btn-primary" href="mailto:zhiii0x@gmail.com?subject=Matcha%20Support">Email support</a>
     </div>
     <p><a href="mailto:zhiii0x@gmail.com?subject=Matcha%20Support" class="mail">zhiii0x@gmail.com</a></p>
 
-    <h2 style="margin-top:44px">Frequently asked</h2>
+    <h2 style="margin-top:44px">Common questions</h2>
 
     <div class="qa">
       <div class="q">How do I record a loop?</div>
@@ -56,30 +83,30 @@
     </div>
     <div class="qa">
       <div class="q">Where are my saved loops?</div>
-      <div class="a">Open the library (the top-left icon on the jam screen). Loops are stored locally on your device — the pack, key and tempo are remembered with each one.</div>
+      <div class="a">Open the library from the top-left icon on the playing screen. Loops are stored locally on your device — the pack, key and tempo are kept with each one.</div>
     </div>
     <div class="qa">
       <div class="q">How do I share what I made?</div>
-      <div class="a">From a saved loop you can export a share video with the reactive ink-wash visuals, then save it to Photos or send it anywhere. Matcha asks for permission to add to your photo library only when you save a video.</div>
+      <div class="a">From a saved loop you can export a video with the reactive ink-wash visuals, then save it to Photos or send it anywhere. Matcha only asks for photo-library permission at the moment you save a video.</div>
     </div>
     <div class="qa">
       <div class="q">Do I need an account?</div>
-      <div class="a">No. There's no sign-up, no login, and no cloud. Matcha works entirely on your device.</div>
+      <div class="a">No. There's no sign-up, no login and no cloud. Matcha works entirely on your device.</div>
     </div>
     <div class="qa">
       <div class="q">Do my loops sync between my iPhone and iPad?</div>
-      <div class="a">Not in this version. Loops are stored on each device individually. Cross-device sync may come in a later update.</div>
+      <div class="a">Not in this version. Loops are stored on each device on its own. Cross-device sync may come in a later update.</div>
     </div>
     <div class="qa">
       <div class="q">Which devices are supported?</div>
-      <div class="a">iPhone and iPad running iOS / iPadOS 17 or later.</div>
+      <div class="a">iPhone and iPad running iOS or iPadOS 17 and later.</div>
     </div>
     <div class="qa">
       <div class="q">Is my data private?</div>
-      <div class="a">Yes — Matcha collects no data and includes no tracking or analytics. See our <a href="privacy.html">Privacy Policy</a> for details.</div>
+      <div class="a">Yes. Matcha collects no data and has no tracking or analytics. See the <a href="privacy.html">Privacy Policy</a> for the details.</div>
     </div>
 
-    <p style="margin-top:34px">Still stuck? Email <a href="mailto:zhiii0x@gmail.com?subject=Matcha%20Support">zhiii0x@gmail.com</a> and tell us your device model and iOS version — it helps us help you faster.</p>
+    <p style="margin-top:34px">Still stuck? Email <a href="mailto:zhiii0x@gmail.com?subject=Matcha%20Support">zhiii0x@gmail.com</a> with your device model and iOS version — it helps us help you faster.</p>
 
   </div>
 </section>
