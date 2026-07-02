@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matcha — Guide</title>
+<meta name="description" content="How to play Matcha: pick a pack, play chords by feel, record four bars, and turn a loop into a video.">
+<meta name="theme-color" content="#0A0910">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon-1024.png">
+<meta property="og:title" content="Matcha — Guide">
+<meta property="og:description" content="How to play Matcha — pick a pack, play by feel, record four bars, share a video.">
+<meta property="og:image" content="https://nono-today.github.io/matcha-site/assets/og.png">
+<meta property="og:url" content="https://nono-today.github.io/matcha-site/guide.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ink-wash canvas -->
+<svg class="ink-bg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <filter id="ink" x="-40%" y="-40%" width="180%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.009 0.013" numOctaves="3" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="150" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="brush" x="-20%" y="-60%" width="140%" height="220%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.04" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <radialGradient id="b-coral"><stop offset="0%" stop-color="#EE5A7C" stop-opacity=".5"/><stop offset="72%" stop-color="#EE5A7C" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b-teal"><stop offset="0%" stop-color="#4FC2AE" stop-opacity=".38"/><stop offset="72%" stop-color="#4FC2AE" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b-yellow"><stop offset="0%" stop-color="#E9BE2E" stop-opacity=".24"/><stop offset="72%" stop-color="#E9BE2E" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b-indigo"><stop offset="0%" stop-color="#3A2E6E" stop-opacity=".5"/><stop offset="72%" stop-color="#3A2E6E" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g filter="url(#ink)">
+    <ellipse cx="230" cy="140" rx="360" ry="300" fill="url(#b-coral)"/>
+    <ellipse cx="1020" cy="220" rx="380" ry="330" fill="url(#b-teal)"/>
+    <ellipse cx="680" cy="880" rx="440" ry="320" fill="url(#b-yellow)"/>
+    <ellipse cx="150" cy="760" rx="320" ry="300" fill="url(#b-indigo)"/>
+  </g>
+</svg>
+<div class="bloom b1"></div><div class="bloom b2"></div><div class="bloom b3"></div>
+<div class="grain"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Matcha<span class="dot">.</span></a>
+    <nav>
+      <a class="hide-sm" href="index.html#features">The instrument</a>
+      <a href="guide.html">Guide</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="wrap">
+    <a class="back" href="index.html"><svg viewBox="0 0 30 8" aria-hidden="true"><path d="M27 4 H4 M9 1 L4 4 L9 7"/></svg> Back to Matcha</a>
+    <span class="eyebrow">Guide <span class="jp">· 手引き</span></span>
+    <h1 class="title" style="margin-top:14px">How to <em>play</em>.</h1>
+    <p class="lead">Matcha is meant to be picked up, not studied. Here is the whole thing in a few minutes — a pack, some chords, a loop, a video. No theory needed.</p>
+    <div class="toc">
+      <a href="#start"><b>01</b> First loop</a>
+      <a href="#packs"><b>02</b> Packs</a>
+      <a href="#chords"><b>03</b> Chords</a>
+      <a href="#keyboard"><b>04</b> Keyboard</a>
+      <a href="#sound"><b>05</b> Sound</a>
+      <a href="#record"><b>06</b> Record</a>
+      <a href="#library"><b>07</b> Library</a>
+      <a href="#share"><b>08</b> Share</a>
+    </div>
+  </div>
+</div>
+
+<section style="padding-top:30px"><div class="wrap">
+
+  <div class="guide-sec" id="start">
+    <div class="num c-coral">01<span class="en">First loop</span></div>
+    <div class="body">
+      <h2>Your first loop <span class="ky">前奏</span></h2>
+      <p>The short path from opening the app to something you can share:</p>
+      <ol class="steps">
+        <li>Choose a pack — a mood to play in. Tokyo Rain is an easy place to start.</li>
+        <li>Tap the big chord buttons. The keyboard picks the root; the buttons pick the colour.</li>
+        <li>Press play. Drums and bass come in, and your four chords loop.</li>
+        <li>Tap the red circle to catch four bars, then save it or turn it into a video.</li>
+      </ol>
+      <p>That is the entire loop. Everything below is just the same four moves, in more detail.</p>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="packs">
+    <div class="num c-yellow">02<span class="en">Packs</span></div>
+    <div class="body">
+      <h2>Pick a mood <span class="ky">気分</span></h2>
+      <p>A pack is a complete kit — synth, bass, drums, swing, tempo, chord palette and colour, chosen to sit together. There are eight: <strong>Tokyo Rain, Study Session, Sunset Drive, Midnight Jazz, Rainy Cafe, Neon Sleep, Saturday Cartoon</strong> and <strong>Late Bus</strong>.</p>
+      <p>To switch, tap <span class="tag">PACK</span> in the row above the transport and choose another. The whole instrument follows — you can change it whenever, and it never loses your place.</p>
+      <figure class="figure">
+        <div class="device"><img src="assets/screen-packs.png" alt="The pack picker — eight mood packs as coloured tiles" loading="lazy"></div>
+        <figcaption>Eight packs, eight moods</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="chords">
+    <div class="num c-teal">03<span class="en">Chords</span></div>
+    <div class="body">
+      <h2>Play by feel <span class="ky">和音</span></h2>
+      <p>Every chord is three small choices working together:</p>
+      <ul class="ticks">
+        <li><b>The keyboard sets the root.</b> Press A, and you are playing an A chord.</li>
+        <li><b>The top row sets the type</b> — <span class="tag">dim</span> <span class="tag">min</span> <span class="tag">maj</span> <span class="tag">sus</span>.</li>
+        <li><b>The bottom row adds a colour</b> — <span class="tag">6</span> <span class="tag">m7</span> <span class="tag">M7</span> <span class="tag">9</span>.</li>
+      </ul>
+      <p>So A with <span class="tag">min</span> and <span class="tag">m7</span> gives you Am7. Change any of the three and the chord updates as it plays. Voice-leading is built in, so moving from one chord to the next stays smooth on its own.</p>
+      <p>The slider above the buttons is the <strong>voicing</strong> — drag it to open the chord up or draw it in tighter.</p>
+      <figure class="figure">
+        <div class="device"><img src="assets/screen-quality.png" alt="The chord grid — type on the top row, colour on the bottom, showing Am7" loading="lazy"></div>
+        <figcaption>Type + colour = the chord</figcaption>
+      </figure>
+      <div class="note"><span class="k">A note</span><p>You do not need to read music. If a change sounds good, it is good — that is the whole idea.</p></div>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="keyboard">
+    <div class="num c-coral">04<span class="en">Keyboard</span></div>
+    <div class="body">
+      <h2>The keyboard leads <span class="ky">鍵盤</span></h2>
+      <p>One octave, C to B. As a chord sounds, its notes light up, so you can always see what you are playing.</p>
+      <p>The keyboard also sets the <strong>register</strong>: press low for a warm, rounded voicing; press high for a brighter one. It is a feel control as much as a way to choose the root — the same chord can sit deep or float, depending on where you touch.</p>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="sound">
+    <div class="num c-yellow">05<span class="en">Sound</span></div>
+    <div class="body">
+      <h2>Shape the tone <span class="ky">音色</span></h2>
+      <p>Five tabs sit just above the transport. Tap any one to open its controls:</p>
+      <ul class="ticks">
+        <li><b>Sound</b> — the lead voice: Rhodes, Pad, Bell or Organ. An experimental sampler can be switched on in Settings.</li>
+        <li><b>Bass</b> — Root, Walking, Octave, 5th, 3rd, Arp, or Silent when you want none.</li>
+        <li><b>Drum</b> — Boom Bap, Jazz, Lofi or Dilla, with swing and level to taste.</li>
+        <li><b>FX</b> — reverb and chorus to set the room, and tone to soften the top end.</li>
+      </ul>
+      <p>Start from a pack you like and nudge one thing at a time. Small moves go a long way here.</p>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="record">
+    <div class="num c-teal">06<span class="en">Record</span></div>
+    <div class="body">
+      <h2>Catch four bars <span class="ky">録音</span></h2>
+      <ol class="steps">
+        <li>Press play. The drums and bass join, and your four chords begin to loop.</li>
+        <li>Play along — change chords, drag the voicing, find something you like.</li>
+        <li>Tap the red circle. Matcha records your next four bars as they play.</li>
+        <li>Tap it again to stop. The bar count and tempo sit to the right of the transport.</li>
+      </ol>
+      <figure class="figure">
+        <div class="device"><img src="assets/screen-play.png" alt="The playing screen with the transport bar showing PLAYING and the bar count" loading="lazy"></div>
+        <figcaption>Play, then catch four bars</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="library">
+    <div class="num c-coral">07<span class="en">Library</span></div>
+    <div class="body">
+      <h2>Keep your loops <span class="ky">保存</span></h2>
+      <p>Save the current loop and it lands in your library with its pack, key and tempo remembered. Re-open one any time to keep playing, or to export it.</p>
+      <p>Everything stays on your device — no account, no cloud, no sign-in. To remove a loop, delete it in the library; to remove everything, delete the app.</p>
+      <figure class="figure">
+        <div class="device"><img src="assets/screen-library.png" alt="The loop library, with a saved loop showing its pack, key and tempo" loading="lazy"></div>
+        <figcaption>Your loops, on your device</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="guide-sec" id="share">
+    <div class="num c-yellow">08<span class="en">Share</span></div>
+    <div class="body">
+      <h2>Turn it into a video <span class="ky">分かち合い</span></h2>
+      <p>From a saved loop, export a video where the ink-wash background blooms with every chord. Save it straight to Photos, or send it anywhere with the share sheet.</p>
+      <p>Matcha only asks for photo-library permission at the moment you save a video — it never looks at the photos you already have.</p>
+      <div class="note"><span class="k">On the Lock Screen</span><p>While a loop plays, your jam appears as a Live Activity on the Lock Screen and in the Dynamic Island — pack, key and tempo at a glance.</p></div>
+    </div>
+  </div>
+
+</div></section>
+
+<!-- EXTRAS -->
+<section style="padding-top:0"><div class="wrap prose">
+  <h2>A few extras</h2>
+  <p>In <strong>Settings</strong> you will find an experimental sampler, MIDI out and sync to an external clock, and a switch for the animated background. There is also a way to re-run this walkthrough inside the app whenever you like.</p>
+  <p>Matcha collects no data and works entirely offline — see the <a href="privacy.html">Privacy Policy</a>. If something is not clear or not working, <a href="support.html">Support</a> is one message away.</p>
+</div></section>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="brand">Matcha<span class="dot">.</span></span>
+    <nav>
+      <a href="guide.html">Guide</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="mailto:zhiii0x@gmail.com">Contact</a>
+    </nav>
+    <span>© 2026 Matcha</span>
+  </div>
+</footer>
+
+</body>
+</html>

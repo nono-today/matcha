@@ -306,3 +306,61 @@ footer.foot a:hover { color: var(--ink); }
 .back:hover { color: var(--ink); }
 
 .page-head { padding: clamp(52px, 8vw, 90px) 0 8px; }
+
+/* ---- Guide / manual ------------------------------------------------- */
+
+.lead { max-width: 60ch; color: var(--ink-dim); font-size: 1.06rem; margin-top: 14px; }
+
+.toc { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 30px; max-width: 760px; }
+.toc a {
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-dim); border: 1px solid var(--border); border-radius: 3px; padding: 7px 12px;
+  transition: border-color .2s, color .2s;
+}
+.toc a:hover { border-color: var(--coral); color: var(--ink); }
+.toc a b { color: var(--ink-faint); margin-right: 7px; font-weight: 400; }
+
+.guide-sec { display: grid; grid-template-columns: 132px 1fr; gap: 34px; padding: 46px 0; align-items: start; scroll-margin-top: 84px; }
+.guide-sec + .guide-sec { border-top: 1px solid var(--border); }
+.guide-sec .num { font-family: var(--font-display); font-weight: 700; font-size: 4.4rem; line-height: 0.8; color: var(--ink); filter: url(#brush); user-select: none; }
+.guide-sec .num .en { display: block; font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-faint); margin-top: 12px; }
+.num.c-coral { color: var(--coral); } .num.c-yellow { color: var(--yellow); } .num.c-teal { color: var(--teal); }
+.guide-sec .body { min-width: 0; }
+.guide-sec h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; margin-bottom: 12px; }
+.ky { font-family: var(--font-display); font-weight: 400; font-size: 0.66em; color: var(--ink-faint); margin-left: 0.5em; letter-spacing: 0.12em; }
+.guide-sec p { color: var(--ink-dim); margin-bottom: 14px; max-width: 60ch; }
+.guide-sec strong { color: var(--ink); font-weight: 700; }
+@media (max-width: 640px) { .guide-sec { grid-template-columns: 1fr; gap: 12px; } .guide-sec .num { font-size: 3.2rem; } }
+
+/* ordered steps with painted index */
+.steps { list-style: none; counter-reset: s; display: grid; gap: 14px; margin: 4px 0 16px; max-width: 60ch; }
+.steps li { counter-increment: s; display: grid; grid-template-columns: 30px 1fr; gap: 14px; color: var(--ink-dim); }
+.steps li::before {
+  content: counter(s); font-family: var(--font-display); font-weight: 700; color: var(--coral);
+  font-size: 1.15rem; line-height: 1.4; filter: url(#brush);
+}
+
+/* plain tick list */
+.ticks { list-style: none; display: grid; gap: 12px; margin: 4px 0 16px; max-width: 60ch; }
+.ticks li { position: relative; padding-left: 22px; color: var(--ink-dim); }
+.ticks li::before { content: ""; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; border-radius: 50% 50% 50% 0; background: var(--teal); filter: url(#brush); }
+.ticks b { color: var(--ink); font-weight: 700; }
+
+/* inline UI label chip, e.g. tap [min] then [m7] */
+.tag {
+  font-family: var(--font-mono); font-size: 0.82em; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 3px; padding: 1px 7px; color: var(--ink); white-space: nowrap;
+}
+
+/* note callout */
+.note {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--coral);
+  border-radius: 0 7px 7px 0; padding: 16px 20px; margin: 18px 0; max-width: 62ch;
+}
+.note .k { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral); display: block; margin-bottom: 6px; }
+.note p { margin: 0; color: var(--ink-dim); }
+
+/* inline screenshot figure */
+.figure { margin: 22px 0 6px; }
+.figure .device { width: min(248px, 62vw); margin: 0; }
+.figure figcaption { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.06em; color: var(--ink-faint); margin-top: 12px; text-transform: uppercase; }
