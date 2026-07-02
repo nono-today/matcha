@@ -225,7 +225,7 @@ section { padding: clamp(52px, 9vw, 96px) 0; }
 .prose ul { padding-left: 22px; margin-bottom: 12px; }
 .prose li { margin-bottom: 8px; }
 .prose strong { color: var(--ink); font-weight: 700; }
-.prose a { color: var(--yellow); text-decoration: underline; text-underline-offset: 3px; }
+.prose a:not(.btn) { color: var(--yellow); text-decoration: underline; text-underline-offset: 3px; }
 .updated { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase; }
 
 /* Little Q/A block for support */
