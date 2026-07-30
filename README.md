@@ -21,4 +21,4 @@ python3 -m http.server 8080
 - Fonts (Zen Old Mincho, Zen Kaku Gothic New, Space Mono) load from Google Fonts — the same faces the app uses.
 - Support / contact email: **zhiii0x@gmail.com**
 - `assets/og.png` is the social-share preview (1200×630).
-- Edit the "Coming to the App Store" line in `index.html` once the app is live to add the store link.
+- The App Store link (`https://apps.apple.com/app/id6786523067`) sits in the hero CTA, in every footer, and in the `apple-itunes-app` smart-banner meta on all four pages.
